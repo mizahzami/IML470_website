@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Barlow Semi Condensed", sans-serif;
+
+}
+header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 90%;
+     padding: 20px 120px;
+     background: #11141a;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    
+    
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+
+nav a:hover 
+nav a.active {
+    color: rgb(5, 60, 42);
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/hogwarts\,stairs.jpg);
+    font-size: 40px;
+    color: #fff;
+    font-weight: 100;
+}
+
+section:nth-child(odd) {
+    background-image: url(image/vladislav-pantic-vladpan-desktop-wallpaper.jpg);
+}
+
+main{
+    padding-top: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+#HOME {
+    font-size: 3em;
+}
+
+
+#ABOUT\ ME .wrapper {
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+#ABOUT\ ME .testimonial{
+    padding: 30px 100px;   
+}
+#ABOUT\ ME article h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+#ABOUT\ ME article h1:after{
+    content: "";
+    height: 5px;
+    width: 225px;
+    background-color:#fff ;
+    display: block;
+    margin: auto;
+}
+#ABOUT\ ME article img{
+    height: 200px;
+    width: 200px;
+    border:2px solid #fff ;
+    border-radius: 50%;
+    margin-top: 60px;
+
+}
+#ABOUT\ ME blockquote{
+    font-family: sans-serif;
+    font-size:20px ;
+    margin-top: 30px;
+}
+#ABOUT\ ME article h5{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+#ABOUT\ ME article p{
+    font-size: 17px;
+}
+
+
+
+
+#MY\ FAV{
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+.card >.row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon{
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.card > .row > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 90px;
+    width: 500px;
+    opacity: 0;
+    transform: rotateY('30px');
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p{
+    color: #b0b0ba;
+    padding: 5px;
+    text-size-adjust: 90;
+}
+
+.description h4{
+    text-transform: lowercase;
+}
+
+.input {
+    display: none;
+}
+
+ input:checked + label{
+    width: 600px;
+}
+
+input:checked + label .description{
+    opacity: 1 ! important;
+    transform: translateY(0) ! important;
+}
+
+.card[for ="c1"]{
+    background-image: url(image/hp1.jpg);
+}
+
+.card[for ="c2"]{
+    background-image: url(image/hp2.jpg);
+}
+
+.card[for ="c3"]{
+    background-image: url(image/hp3.jpg);
+}
+.card[for ="c4"]{
+    background-image: url(image/hp4.jpg);
+}
+
+.card[for="c5"]{
+ background-image: url(image/hp5.jpg);
+}
+
+.card[for ="c6"]{
+    background-image: url(image/hp6.jpg);
+}
+
+.card[for ="c7"]{
+    background-image: url(image/hp7\(1\).jpg);
+}
+
+.card[for ="c8"]{
+    background-image: url(image/hp7\(2\).jpg);
+}
+
+#MOVIE\ TRAILER .container{
+    width: 100%;
+    height:100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MOVIE\ TRAILER .container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#MOVIE\ TRAILER .container ul{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform:translateX(-50%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MOVIE\ TRAILER .container ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#MOVIE\ TRAILER .container ul li video{
+    width: 200px;
+    transition: all 0.3;
+}
+
+#MOVIE\ TRAILER .container ul li video:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+#MOVIE\ TRAILER video{
+    width: 100%;
+    height: 100%;
+}
+
+
+#CONTACT .contact-container {
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#CONTACT .contact-left {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+}
+
+#CONTACT .contact-left-title h2 {
+    font-weight: 600;
+    color: green;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+#CONTACT .contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: green;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+#CONTACT .contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+#CONTACT .contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+#CONTACT .contact-inputs:focus{
+    border: 2px solid seagreen;
+}
+      
+#CONTACT .contact-inputs::placeholder{
+    color: #b0b0ba;
+}
+
+#CONTACT .contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    background: linear-gradient(270deg,green,rgb(8, 206, 21));
+    cursor: pointer;
+} 
+
+#CONTACT .contact-left button img{
+    height: 15px;
+}
+
+#CONTACT .contact-right img{
+    width: 500px;
+}
+ @media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+        }
+        .contact-right{
+            display: none;
+        }
+}
